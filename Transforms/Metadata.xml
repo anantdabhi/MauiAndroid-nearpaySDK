@@ -1,0 +1,154 @@
+﻿<metadata>
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+	<remove-node path="/api/package[@name='io.nearpay.sdk.utils.listeners']/interface[@name='GetReconciliationPageListener']" />
+	<remove-node path="/api/package[@name='io.nearpay.sdk.utils.listeners']/interface[@name='SessionListener']" />
+	<remove-node path="/api/package[@name='io.nearpay.sdk.utils.listeners']/interface[@name='GetTransactionListener']" />
+	<remove-node path="/api/package[@name='io.nearpay.sdk.utils.listeners']/class[@name='FailureEventArgs']" />
+	<remove-node path="/api/package[@name='io.nearpay.sdk.utils.listeners']/interface[@name='GetTransactionPageListener']" />
+
+
+
+	<attr path="/api/package[@name='io.nearpay.sdk']/class[@name='NearPay']/method[@name='finalize' and count(parameter)=0]" name="managedName">InternalFinalize</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk']/class[@name='NearPay']/method[@name='finalize' and count(parameter)=0]" name="visibility">internal</attr>
+
+
+	<attr
+	path="/api/package[@name='io.nearpay.sdk.databinding']/class[@name='LayoutReconcilHeaderBinding']/field[@name='reconciliationAr']"
+    name="managedReturn">
+		Android.Views.View
+	</attr>
+
+
+
+
+	<attr
+    path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='TransactionReceipt.Creator']/method[@name='createFromParcel' and count(parameter)=1 and parameter[1][@type='android.os.Parcel']]"
+    name="managedReturn">Java.Lang.Object?</attr>
+
+	<attr
+    path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='LabelField.Creator']/method[@name='createFromParcel' and count(parameter)=1 and parameter[1][@type='android.os.Parcel']]"
+    name="managedReturn">Java.Lang.Object</attr>
+
+	<attr path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='TransactionBannerList.Creator']/method[@name='newArray' and count(parameter)=1 and parameter[1][@type='int']]"
+	name="managedReturn">Java.Lang.Object</attr>
+
+	<attr
+    path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='LocalizationField.Creator']/method[@name='createFromParcel' and count(parameter)=1 and parameter[1][@type='android.os.Parcel']]"
+    name="managedReturn">Java.Lang.Object</attr>
+
+	<attr
+    path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='Merchant.Creator']/method[@name='createFromParcel' and count(parameter)=1 and parameter[1][@type='android.os.Parcel']]"
+    name="managedReturn">Java.Lang.Object</attr>
+
+	<attr
+	path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='ReconciliationDetails.Creator']/method[@name='createFromParcel' and count(parameter)=1 and parameter[1][@type='android.os.Parcel']]"
+	name="managedReturn">Java.Lang.Object</attr>
+
+	<attr
+	path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='ReconciliationItem.Creator']/method[@name='createFromParcel' and count(parameter)=1 and parameter[1][@type='android.os.Parcel']]"
+	name="managedReturn">Java.Lang.Object</attr>
+
+	<attr path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='ReconciliationLabelField.Creator']/method[@name='createFromParcel' and count(parameter)=1 and parameter[1][@type='android.os.Parcel']]"
+		  name="managedReturn">Java.Lang.Object</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='ReconciliationList.Creator']/method[@name='createFromParcel' and count(parameter)=1 and parameter[1][@type='android.os.Parcel']]"
+		  name="managedReturn">Java.Lang.Object</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='Session.Creator']/method[@name='createFromParcel' and count(parameter)=1 and parameter[1][@type='android.os.Parcel']]"
+		  name="managedReturn">Java.Lang.Object</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='SessionInfo.Creator']/method[@name='createFromParcel' and count(parameter)=1 and parameter[1][@type='android.os.Parcel']]"
+		  name="managedReturn">Java.Lang.Object</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='Transaction.Creator']/method[@name='createFromParcel' and count(parameter)=1 and parameter[1][@type='android.os.Parcel']]"
+		  name="managedReturn">Java.Lang.Object</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='NameField.Creator']/method[@name='createFromParcel' and count(parameter)=1 and parameter[1][@type='android.os.Parcel']]"
+	  name="managedReturn">Java.Lang.Object</attr>
+
+	<attr path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='ReconciliationReceipt.Creator']/method[@name='createFromParcel' and count(parameter)=1 and parameter[1][@type='android.os.Parcel']]"			name="managedReturn">Java.Lang.Object</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='ReconciliationSchemes.Creator']/method[@name='createFromParcel' and count(parameter)=1 and parameter[1][@type='android.os.Parcel']]"			name="managedReturn">Java.Lang.Object</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='ReconciliationSchemesDetails.Creator']/method[@name='createFromParcel' and count(parameter)=1 and parameter[1][@type='android.os.Parcel']]"	name="managedReturn">Java.Lang.Object</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='TransactionBanner.Creator']/method[@name='createFromParcel' and count(parameter)=1 and parameter[1][@type='android.os.Parcel']]"				name="managedReturn">Java.Lang.Object</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.utils.enums']/class[@name='TransactionData.Creator']/method[@name='createFromParcel' and count(parameter)=1 and parameter[1][@type='android.os.Parcel']]" name="managedReturn">Java.Lang.Object</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='TransactionBannerList.Creator']/method[@name='createFromParcel' and count(parameter)=1 and parameter[1][@type='android.os.Parcel']]" name="managedReturn">Java.Lang.Object</attr>
+
+	<!--newArray-->
+
+	<attr path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='Transaction.Creator']/method[@name='newArray' and count(parameter)=1 and parameter[1][@type='int']]"
+		  name="managedReturn">Java.Lang.Object[]</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='SessionInfo.Creator']/method[@name='newArray' and count(parameter)=1 and parameter[1][@type='int']]"
+		  name="managedReturn">Java.Lang.Object[]</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='ReconciliationLabelField.Creator']/method[@name='newArray' and count(parameter)=1 and parameter[1][@type='int']]"
+		  name="managedReturn">Java.Lang.Object[]</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='ReconciliationList.Creator']/method[@name='newArray' and count(parameter)=1 and parameter[1][@type='int']]"
+		  name="managedReturn">Java.Lang.Object[]</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='Session.Creator']/method[@name='newArray' and count(parameter)=1 and parameter[1][@type='int']]"
+		  name="managedReturn">Java.Lang.Object[]</attr>
+
+	<attr path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='ReconciliationSchemes.Creator']/method[@name='newArray' and count(parameter)=1 and parameter[1][@type='int']]"		name="managedReturn">Java.Lang.Object[]</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='ReconciliationReceipt.Creator']/method[@name='newArray' and count(parameter)=1 and parameter[1][@type='int']]"		name="managedReturn">Java.Lang.Object[]</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='ReconciliationSchemesDetails.Creator']/method[@name='newArray' and count(parameter)=1 and parameter[1][@type='int']]"	name="managedReturn">Java.Lang.Object[]</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='TransactionBanner.Creator']/method[@name='newArray' and count(parameter)=1 and parameter[1][@type='int']]"			name="managedReturn">Java.Lang.Object[]</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.utils.enums']/class[@name='TransactionData.Creator']/method[@name='newArray' and count(parameter)=1 and parameter[1][@type='int']]"			name="managedReturn">Java.Lang.Object[]</attr>
+
+	<attr
+path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='ReconciliationItem.Creator']/method[@name='newArray' and count(parameter)=1 and parameter[1][@type='int']]"
+	name="managedReturn">Java.Lang.Object[]</attr>
+
+
+	<attr
+	path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='TransactionReceipt.Creator']/method[@name='newArray' and count(parameter)=1 and parameter[1][@type='int']]"
+	name="managedReturn">Java.Lang.Object[]</attr>
+
+	<attr
+	path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='LocalizationField.Creator']/method[@name='newArray' and count(parameter)=1 and parameter[1][@type='int']]"
+	name="managedReturn">Java.Lang.Object[]</attr>
+
+	<attr
+	path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='LabelField.Creator']/method[@name='newArray' and count(parameter)=1 and parameter[1][@type='int']]"
+	name="managedReturn">Java.Lang.Object[]</attr>
+
+
+	<attr
+	path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='Merchant.Creator']/method[@name='newArray' and count(parameter)=1 and parameter[1][@type='int']]"
+	name="managedReturn">Java.Lang.Object[]</attr>
+
+	<attr
+	path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='NameField.Creator']/method[@name='newArray' and count(parameter)=1 and parameter[1][@type='int']]"
+	name="managedReturn">Java.Lang.Object[]</attr>
+
+	<attr
+	path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='ReconciliationDetails.Creator']/method[@name='newArray' and count(parameter)=1 and parameter[1][@type='int']]"
+	name="managedReturn">Java.Lang.Object[]</attr>
+
+	<attr
+		path="/api/package[@name='io.nearpay.sdk.data.models']/class[@name='TransactionBannerList.Creator']/method[@name='newArray' and count(parameter)=1 and parameter[1][@type='int']]"
+	name="managedReturn">Java.Lang.Object[]</attr>
+
+	<!--new-->
+
+	<attr path="/api/package[@name='io.nearpay.sdk.databinding']/class[@name='ActivityCommunicationBinding']/method[@name='getRoot' and count(parameter)=0]" name="managedReturn">Android.Views.View</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.databinding']/class[@name='LayoutReconcilHeaderBinding']/method[@name='getRoot' and count(parameter)=0]" name="managedReturn">Android.Views.View</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.databinding']/class[@name='ActivityInstallBinding']/method[@name='getRoot' and count(parameter)=0]" name="managedReturn">Android.Views.View</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.databinding']/class[@name='LayoutReceiptTransactionContactlessBinding']/method[@name='getRoot' and count(parameter)=0]"	name="managedReturn">Android.Views.View</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.databinding']/class[@name='LayoutReceiptsBinding']/method[@name='getRoot' and count(parameter)=0]"						name="managedReturn">Android.Views.View</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.databinding']/class[@name='LayoutNearpayFooterBinding']/method[@name='getRoot' and count(parameter)=0]"					name="managedReturn">Android.Views.View</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.databinding']/class[@name='LayoutMerchantInfoBinding']/method[@name='getRoot' and count(parameter)=0]"					name="managedReturn">Android.Views.View</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.databinding']/class[@name='LayoutInstallStateBinding']/method[@name='getRoot' and count(parameter)=0]"					name="managedReturn">Android.Views.View</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.databinding']/class[@name='LayoutExpandedErrorDialogBinding']/method[@name='getRoot' and count(parameter)=0]"			name="managedReturn">Android.Views.View</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.databinding']/class[@name='FragmentInstallPermissionBinding']/method[@name='getRoot' and count(parameter)=0]"			name="managedReturn">Android.Views.View</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.databinding']/class[@name='FragmentInstallBinding']/method[@name='getRoot' and count(parameter)=0]"						name="managedReturn">Android.Views.View</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.databinding']/class[@name='ActivityTransactionReceiptBinding']/method[@name='getRoot' and count(parameter)=0]"			name="managedReturn">Android.Views.View</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.databinding']/class[@name='ActivityReconciliationReceiptBinding']/method[@name='getRoot' and count(parameter)=0]"		name="managedReturn">Android.Views.View</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.databinding']/class[@name='LayoutCardSchemeDetailsBinding']/method[@name='getRoot' and count(parameter)=0]"				name="managedReturn">Android.Views.View</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.databinding']/class[@name='LayoutReceiptContentBinding']/method[@name='getRoot' and count(parameter)=0]"					name="managedReturn">Android.Views.View</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.databinding']/class[@name='LayoutReceiptTransactionHeaderBinding']/method[@name='getRoot' and count(parameter)=0]"		name="managedReturn">Android.Views.View</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.databinding']/class[@name='LayoutReceiptTransactionBodyBinding']/method[@name='getRoot' and count(parameter)=0]"			name="managedReturn">Android.Views.View</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.databinding']/class[@name='LayoutReceiptTransactionMessageBinding']/method[@name='getRoot' and count(parameter)=0]"		name="managedReturn">Android.Views.View</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.databinding']/class[@name='LayoutReconcileContentBinding']/method[@name='getRoot' and count(parameter)=0]"				name="managedReturn">Android.Views.View</attr>
+	<attr path="/api/package[@name='io.nearpay.sdk.receipt.reconcile']/class[@name='ReconcileSchemeAdapter']/method[@name='onCreateViewHolder' and count(parameter)=2 and parameter[1][@type='android.view.ViewGroup'] and parameter[2][@type='int']]"
+		  name="managedOverride">override</attr>
+
+</metadata>
