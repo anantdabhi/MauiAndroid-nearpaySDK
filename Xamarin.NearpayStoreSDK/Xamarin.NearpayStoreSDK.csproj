@@ -10,7 +10,7 @@
     -->
     <IsTrimmable>true</IsTrimmable>
     <Title>xarmarin-nearpay-sdk-store</Title>
-    <Version>2.1.88</Version>
+    <Version>2.1.88.1</Version>
     <Description>Android MAUI Xamarin library for Nearpay The Tap to Pay on Phone SDK</Description>
     <Copyright>Anant</Copyright>
     <PackageProjectUrl>https://github.com/anantdabhi/MauiAndroid-nearpaySDK</PackageProjectUrl>
@@ -30,8 +30,8 @@
 
 	<ItemGroup>
 
-		<AndroidMavenLibrary Include="io.nearpay:nearpay-sdk" Version="2.1.88" />
-		<AndroidMavenLibrary Include="io.nearpay:nearpay-sdk-shared-public" Version="2.1.88" Bind="false" />
+		<AndroidMavenLibrary Include="io.nearpay:nearpay-sdk-store" Version="2.1.88"  Bind="true" />
+		<AndroidMavenLibrary Include="io.nearpay:nearpay-sdk-shared-public" Version="2.1.88" Bind="true" />
 		<AndroidMavenLibrary Include="io.nearpay:nearpay-sdk-shared-internal" Version="2.1.88" Bind="false" />
 		<AndroidMavenLibrary Include="org.jetbrains.kotlin:kotlin-parcelize-runtime" Version="1.7.10" Bind="false" />
 
